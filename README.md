@@ -1,2 +1,7 @@
-# kitchenlab
-Kitchen Lab launcher (home screen icon)
+# Kitchen Lab Launcher
+
+材料とレシピのアプリ「Kitchen Lab」をスマホのホーム画面から開くための入口ページです。
+
+- ホーム画面のアイコンから起動すると、Kitchen Lab（claude.ai のアーティファクト）へ自動で移動します。
+- ブラウザで直接開いた場合は移動せず、ホーム画面への追加方法を表示します。
+- アイコンを差し替えるときは、ファイル名の番号を上げてください（例: `kl1-` → `kl2-`）。同じ名前のままだと端末側で古いアイコンが残ります。
