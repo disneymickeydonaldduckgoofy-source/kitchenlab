@@ -1,6 +1,6 @@
 // Kitchen Lab launcher: network-first, falls back to cache when offline.
-const CACHE = "kitchenlab-launcher-v2";
-const CORE = ["./", "index.html", "manifest.webmanifest", "kl1-32.png", "kl2-180.png", "kl2-192.png", "kl2-512.png", "kl2-maskable-512.png"];
+const CACHE = "kitchenlab-launcher-v3";
+const CORE = ["./", "index.html", "manifest.webmanifest", "kl3-32.png", "kl3-180.png", "kl3-192.png", "kl3-512.png", "kl3-maskable-512.png"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(CORE)).then(() => self.skipWaiting()));

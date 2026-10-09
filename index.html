@@ -12,21 +12,20 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Kitchen Lab">
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" type="image/png" sizes="32x32" href="kl1-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="kl2-192.png">
-<link rel="apple-touch-icon" href="kl2-180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="kl3-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="kl3-192.png">
+<link rel="apple-touch-icon" href="kl3-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&family=IBM+Plex+Mono:wght@500&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=IBM+Plex+Mono:wght@500&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{--ground:#efefec;--panel:#ffffff;--ink:#141414;--sub:#5e5e58;--rule:#dcdcd6;--accent:#ff9500;--accent-fg:#141414}
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--ground)}
 body{color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;min-height:100vh;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:24px 16px}
 .panel{width:100%;max-width:420px;background:var(--panel);border:1px solid var(--rule)}
-.band{background:var(--ink);color:#ffffff;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:4px solid var(--accent)}
-.band h1{margin:0;display:flex;align-items:center;gap:10px;font-family:"IBM Plex Sans Condensed","Arial Narrow",sans-serif;font-weight:700;font-size:24px;letter-spacing:.02em;line-height:1}
-.band h1::before{content:"";width:13px;height:13px;background:var(--accent)}
+.band{background:var(--ink);color:#f4f4f1;display:flex;align-items:baseline;justify-content:space-between;padding:12px 16px}
+.band h1{margin:0;font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:700;font-size:26px;letter-spacing:4px;line-height:1}
 .band span{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:1px;color:#a9a9a2}
 .body{padding:24px 16px 20px;display:grid;gap:18px;justify-items:center;text-align:center}
 .body img{width:112px;height:112px;display:block;border:1px solid var(--rule)}
@@ -45,9 +44,9 @@ body{color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Sans","Noto Sa
 </head>
 <body>
 <main class="panel">
-  <header class="band"><h1>Kitchen Lab</h1><span>LAUNCHER</span></header>
+  <header class="band"><h1>KITCHEN LAB</h1><span>LAUNCHER</span></header>
   <div class="body">
-    <img src="kl2-192.png" alt="" width="112" height="112">
+    <img src="kl3-192.png" alt="" width="112" height="112">
     <p class="msg" id="msg">ホーム画面に追加すると、このアイコンからKitchen Labを開けます。</p>
     <a class="btn primary" id="open" href="https://claude.ai/artifact/Ki5BjgZdGxxiUBmf2SxwEX">Kitchen Labを開く</a>
     <button class="btn secondary" id="install" type="button" hidden>ホーム画面に追加</button>
@@ -57,7 +56,7 @@ body{color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Sans","Noto Sa
       <li><b>3</b><span>「追加」「インストール」をタップ</span></li>
     </ol>
   </div>
-  <footer class="foot"><span>kitchenlab</span><span>v2</span></footer>
+  <footer class="foot"><span>kitchenlab</span><span>v3</span></footer>
 </main>
 <script>
 (function(){
